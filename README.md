@@ -2,6 +2,26 @@
 
 Welcome to Photo-Synthesis!
 
+             .-.'  '.-.
+          .-(   \  /   )-.
+         /   '..oOOo..'   \
+ ,       \.--.oOOOOOOo.--./
+ |\  ,   (   :oOOOOOOo:   )
+_\.\/|   /'--'oOOOOOOo'--'\
+'-.. ;/| \   .''oOOo''.   /
+.--`'. :/|'-(   /  \   )-'
+ '--. `. / //'-'.__.'-;
+   `'-,_';//      ,  /|
+        '((       |\/./_
+          \\  . |\; ..-'
+           \\ |\: .'`--.
+            \\, .' .--'
+             ))'_,-'`
+       jgs  //-'
+           // 
+          //
+         |/
+
 The Problem:
 
 > We need a program to help query for photo albums and log their record's titles and ids.
