@@ -32,7 +32,6 @@ This project has an `.nvmrc` file, so if you use [nvm](https://github.com/nvm-sh
 
 ## How to run
 
-From 
 `$ npm run execute`
 
 ## How to use
