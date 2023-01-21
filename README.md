@@ -30,6 +30,7 @@ You will be prompted with a question.
 Enter a valid stringnumber input within the available album range (1-100).
 
 Example:
+
     Which picture album do you want to view?
 
     input: 2
