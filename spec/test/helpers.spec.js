@@ -1,6 +1,6 @@
-import { logIdWithTitle } from '../../util/helpers.js';
+import { getIdWithTitle } from '../../util/helpers.js';
 
-describe('logIdWithTitle', () => {
+describe('getIdWithTitle', () => {
   it('returns with expected `[id] title` syntax', () => {
     const mockObj = {
       id: '1',
@@ -9,7 +9,7 @@ describe('logIdWithTitle', () => {
 
     const expected = '[1] Spongebob Anime'
 
-    const value = logIdWithTitle(mockObj.id, mockObj.title);
+    const value = getIdWithTitle(mockObj.id, mockObj.title);
     expect(value).toBe(expected)
   });
 });

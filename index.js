@@ -3,7 +3,7 @@ import readline from "readline/promises";
 import { fetchAlbumWithId } from "./api/fetch.js";
 
 import { blue, correct, error, warning } from "./util/chalkColors.js";
-import { logIdWithTitle } from "./util/helpers.js";
+import { getIdWithTitle } from "./util/helpers.js";
 import { isBetween1and100, isNumber } from "./util/validation.js";
 
 /** Main application function */
@@ -56,8 +56,7 @@ const main = async () => {
     // If it does have records, log the expected `[id] title` output for each record
     if (!albums.length) {
       console.warn(warning('The album you chose has no records!'));
-      console.log(albums);
-    } else albums.forEach(record => correct(logIdWithTitle(record.id, record.title)));
+    } else albums.forEach(record => console.log(correct(getIdWithTitle(record.id, record.title))));
 
     // Prompt for continuing to search albums
     shouldContinue();
@@ -69,3 +68,5 @@ const main = async () => {
 }
 
 main();
+
+export default main;

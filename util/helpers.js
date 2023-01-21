@@ -1,4 +1,3 @@
-export const logIdWithTitle = (id, title) => {
-  console.log((`[${id}] ${title}`));
+export const getIdWithTitle = (id, title) => {
   return `[${id}] ${title}`;
 }

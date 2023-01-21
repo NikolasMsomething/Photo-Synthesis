@@ -16,6 +16,7 @@ This is the tech that Photo-Sythesis relies on
 
 - [Node.js](https://nodejs.org/en/) - Evented I/O for the backend!
 - [Chalk](https://www.npmjs.com/package/chalk) - Colorize your terminal outputs!
+- [Jasmine](https://jasmine.github.io/) - Jasmine is an open-source testing framework for JavaScript!
 
 ## Install dependencies
 
@@ -48,3 +49,9 @@ Example:
     [242] vitae ut sequi explicabo perspiciatis repudiandae omnis et qui
     [243] sed nobis consequatur dolores
     [244] aut doloribus quia unde quia
+
+## Testing
+
+Test are located in `./spec/test`
+
+`$ npm run test`
