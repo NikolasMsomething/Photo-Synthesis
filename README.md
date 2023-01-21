@@ -18,10 +18,6 @@ This is the tech that Photo-Synthesis relies on
 - [Chalk](https://www.npmjs.com/package/chalk) - Terminal string styling!
 - [Jasmine](https://jasmine.github.io/) - Jasmine is an open-source testing framework for JavaScript!
 
-## Install dependencies
-
-`$ npm install`
-
 ## Node version
 
 Photo-Syntesis requires [Node.js](https://nodejs.org/) v18 to run.
@@ -30,6 +26,10 @@ This project has an `.nvmrc` file, so if you use [nvm](https://github.com/nvm-sh
 `$ nvm install` to install the this project's version of node (if you do not have the version already installed)
 
 `$ nvm use` to swap to this project's version of node
+
+## Install dependencies
+
+`$ npm install`
 
 ## How to run
 
