@@ -17,7 +17,7 @@ This is the tech that Photo-Synthesis relies on:
 - [Node.js](https://nodejs.org/en/) - Evented I/O for the backend!
 - [Chalk](https://www.npmjs.com/package/chalk) - Terminal string styling!
 - [Husky](https://www.npmjs.com/package/husky) - Modern native Git hooks made easy!
-- [Jasmine](https://jasmine.github.io/) - Jasmine is an open-source testing framework for JavaScript!
+- [Jasmine](https://jasmine.github.io/) - An open-source testing framework for JavaScript!
 
 ## Node version
 
