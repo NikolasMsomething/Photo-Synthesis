@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./test",
+    "test": "jasmine",
     "execute": "node ./index.js"
   },
   "type": "module",
@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0"
+  },
+  "devDependencies": {
+    "jasmine": "^4.5.0"
   }
 }

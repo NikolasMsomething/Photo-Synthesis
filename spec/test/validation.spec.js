@@ -1,5 +1,4 @@
-import { expect, describe, it } from '@jest/globals';
-import { isBetween1and100, isNumber } from '../util/validation.js';
+import { isBetween1and100, isNumber } from '../../util/validation.js';
 
 describe('isBetween1and100', () => {
   it('returns true if input is between 1 and 100', () => {
