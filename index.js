@@ -52,7 +52,7 @@ const main = async () => {
     const albums = await response.json();
 
     // check if array of albums has records
-    // If it does not have records, log it doesn't have records and log the empty array
+    // If it does not have records, warn it doesn't have records
     // If it does have records, log the expected `[id] title` output for each record
     if (!albums.length) console.warn(warning('The album you chose has no records!'));
     else albums.forEach(record => console.log(correct(getIdWithTitle(record.id, record.title))));
