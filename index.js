@@ -54,9 +54,8 @@ const main = async () => {
     // check if array of albums has records
     // If it does not have records, log it doesn't have records and log the empty array
     // If it does have records, log the expected `[id] title` output for each record
-    if (!albums.length) {
-      console.warn(warning('The album you chose has no records!'));
-    } else albums.forEach(record => console.log(correct(getIdWithTitle(record.id, record.title))));
+    if (!albums.length) console.warn(warning('The album you chose has no records!'));
+    else albums.forEach(record => console.log(correct(getIdWithTitle(record.id, record.title))));
 
     // Prompt for continuing to search albums
     shouldContinue();
