@@ -1,6 +1,6 @@
 # Photo-Synthesis
 
-Welcome to
+Welcome to...
 ![Photo-Synthesis](https://user-images.githubusercontent.com/30378890/213864893-52f5cc56-c5ea-4761-b517-a623c2f5b08b.png)
 
 The Problem:
