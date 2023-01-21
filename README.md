@@ -52,6 +52,6 @@ Example:
 
 ## Testing
 
-Test are located in `./spec/test`
+Tests are located in `./spec/tests`
 
 `$ npm run test`
