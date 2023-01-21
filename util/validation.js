@@ -5,7 +5,7 @@ const isStringNum = (input) => {
 
 const isBetween1and100 = (input) => {
   const number = Number(input);
-  if (number > 0 && number < 100) return true;
+  if (number > 0 && number <= 100) return true;
   return false
 }
 
