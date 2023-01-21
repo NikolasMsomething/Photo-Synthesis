@@ -1,7 +1,7 @@
 # Photo-Synthesis
 
 Welcome to Photo-Synthesis!
-
+`
              .-.'  '.-.
           .-(   \  /   )-.
          /   '..oOOo..'   \
@@ -21,7 +21,7 @@ _\.\/|   /'--'oOOOOOOo'--'\
            // 
           //
          |/
-
+`
 The Problem:
 
 > We need a program to help query for photo albums and log their record's titles and ids.
