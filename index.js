@@ -62,7 +62,7 @@ const main = async () => {
     shouldContinue();
 
   } catch (e) {
-    console.log(error(`${e} ... Please try again!`));
+    console.error(error(`${e} ... Please try again!`));
     restart();
   }
 }

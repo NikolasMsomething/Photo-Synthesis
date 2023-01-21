@@ -7,6 +7,7 @@ describe('main', () => {
     spyOn(process, 'exit');
     spyOn(console, 'log');
     spyOn(console, 'warn');
+    spyOn(console, 'error');
   })
 
   describe('Incorrect Input Validations', () => {
@@ -17,10 +18,10 @@ describe('main', () => {
           return ''
         },
         close: () => undefined,
-      })
+      });
 
       await main();
-      expect(console.log).toHaveBeenCalledWith(error('Error: Invalid input. Expected a non null input ... Please try again!'))
+      expect(console.error).toHaveBeenCalledWith(error('Error: Invalid input. Expected a non null input ... Please try again!'))
     });
 
     it('logs correct error if user input is a string', async () => {
@@ -33,7 +34,7 @@ describe('main', () => {
       })
 
       await main();
-      expect(console.log).toHaveBeenCalledWith(error('Error: Invalid input. Expected a valid number input ... Please try again!'))
+      expect(console.error).toHaveBeenCalledWith(error('Error: Invalid input. Expected a valid number input ... Please try again!'))
     });
 
     it('exits node process if user input is "exit"', async () => {
@@ -58,7 +59,7 @@ describe('main', () => {
       })
 
       await main();
-      expect(console.log).toHaveBeenCalledWith(error('Error: Enter an album in the available albums range (1 - 100) ... Please try again!'));
+      expect(console.error).toHaveBeenCalledWith(error('Error: Enter an album in the available albums range (1 - 100) ... Please try again!'));
     });
   })
 
