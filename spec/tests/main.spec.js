@@ -1,4 +1,5 @@
 import readline from "readline/promises";
+
 import main from "../../index.js";
 import { correct, error, warning } from "../../util/chalkColors.js";
 
