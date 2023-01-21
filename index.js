@@ -20,7 +20,7 @@ const main = async () => {
 
     // If answer is empty throw error
     if (!answer.length) throw new Error('Invalid input. Expected a non null input')
-    // If answer isNaN throw error
+    // If answer is not a number throw error
     if (!isNumber(answer)) throw new Error('Invalid input. Expected a valid number input');
     // When querying for an album out of range the api returns an empty array with a 200 status, so I'm using this validation check as an extra line of precaution
     if (!isBetween1and100(answer)) throw new Error('The album you are looking for is not available');
@@ -34,8 +34,8 @@ const main = async () => {
     const albums = await response.json();
 
     // check if array of albums has records
-    // if it does not have records, log it doesnt have records and log the empty array
-    // if it does have records, log the expected `[id] title` output for each record
+    // If it does not have records, log it doesnt have records and log the empty array
+    // If it does have records, log the expected `[id] title` output for each record
     if (!albums.length) {
       console.log('The album you chose has no records!');
     } else albums.forEach(record => logIdWithTitle(record.id, record.title));

@@ -20,14 +20,14 @@ This is the tech that Photo-Sythesis relies on
 ## Install dependencies
 
 From
-$ `npm install`
+\$ `npm install`
 
 ## How to run
 
 Photo-Syntesis requires [Node.js](https://nodejs.org/) v19+ to run.
 
 From 
-$ `npm run execute`
+\$ `npm run execute`
 
 ## How to use
 
