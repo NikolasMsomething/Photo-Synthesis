@@ -1,7 +1,8 @@
 # Photo-Synthesis
 
 Welcome to...
-![download](https://user-images.githubusercontent.com/30378890/213864955-73426e16-1a8e-4e53-bd7a-f35221aaba63.png)
+![PhotoSynthesis](https://user-images.githubusercontent.com/30378890/213864992-d207a7dd-af3d-44c3-8901-9f8a20d8ad3e.png)
+
 
 The Problem:
 
