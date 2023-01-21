@@ -4,11 +4,11 @@ Welcome to Photo-Synthesis!
 
 The Problem:
 
-> We need a program to help query for photo albums and log every item's title and id.
+> We need a program to help query for photo albums and log their record's titles and ids.
 
 The Solution:
 
-> Photo-Synthesis allows users to interact with the terminal to query for any available album!
+> Photo-Synthesis allows users to interact with the terminal to do so!
 
 ## Tech
 
@@ -25,13 +25,15 @@ From
 
 ## How to use
 
-You will be prompted with the question.
+You will be prompted with a question.
 
-Enter a valid string number input within the available album range (1-100).
+Enter a valid stringnumber input within the available album range (1-100).
 
 Example:
     Which picture album do you want to view?
+
     input: 2
+
     output: 
         [242] vitae ut sequi explicabo perspiciatis repudiandae omnis et qui
         [243] sed nobis consequatur dolores
