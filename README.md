@@ -1,0 +1,38 @@
+# Photo-Synthesis
+
+Welcome to Photo-Synthesis!
+
+The Problem:
+
+> We need a program to help query for photo albums and log every item's title and id.
+
+The Solution:
+
+> Photo-Synthesis allows users to interact with the terminal to query for any available album!
+
+## Tech
+
+This is the tech that Photo-Sythesis relies on
+
+- [Node.js](https://nodejs.org/en/) - Evented I/O for the backend!
+
+## How to run
+
+Photo-Syntesis requires [Node.js](https://nodejs.org/) v19+ to run.
+
+From 
+\$ npm run execute
+
+## How to use
+
+You will be prompted with the question.
+
+Enter a valid string number input within the available album range (1-100).
+
+Example:
+    Which picture album do you want to view?
+    input: 2
+    output: 
+        [242] vitae ut sequi explicabo perspiciatis repudiandae omnis et qui
+        [243] sed nobis consequatur dolores
+        [244] aut doloribus quia unde quia
