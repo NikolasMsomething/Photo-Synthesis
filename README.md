@@ -31,11 +31,10 @@ Enter a valid stringnumber input within the available album range (1-100).
 
 Example:
 
-    Which picture album do you want to view?
+    >Which picture album do you want to view?
 
-    input: 2
+    >2
 
-    output: 
-        [242] vitae ut sequi explicabo perspiciatis repudiandae omnis et qui
-        [243] sed nobis consequatur dolores
-        [244] aut doloribus quia unde quia
+    >[242] vitae ut sequi explicabo perspiciatis repudiandae omnis et qui
+    [243] sed nobis consequatur dolores
+    [244] aut doloribus quia unde quia
