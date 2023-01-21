@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test ./test",
     "execute": "node ./index.js"
   },
   "type": "module",
@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
