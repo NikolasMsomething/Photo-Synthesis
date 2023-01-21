@@ -1,7 +1,5 @@
-const logIdWithTitle = (id, title) => {
-  console.log(`[${id}] ${title}`);
-}
+import { correct } from "./chalkColors.js";
 
-module.exports = {
-  logIdWithTitle,
+export const logIdWithTitle = (id, title) => {
+  console.log(correct(`[${id}] ${title}`));
 }

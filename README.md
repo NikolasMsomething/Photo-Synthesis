@@ -15,6 +15,12 @@ The Solution:
 This is the tech that Photo-Sythesis relies on
 
 - [Node.js](https://nodejs.org/en/) - Evented I/O for the backend!
+- [Chalk](https://www.npmjs.com/package/chalk) - Colorize your terminal outputs!
+
+## Install dependencies
+
+From
+$ `npm install`
 
 ## How to run
 

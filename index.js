@@ -1,9 +1,10 @@
-const readline = require("readline/promises");
+import readline from "readline/promises";
 
-const { fetchAlbumWithId } = require("./api/fetch");
+import { fetchAlbumWithId } from "./api/fetch.js";
 
-const { logIdWithTitle } = require("./util/helpers");
-const { isArrayLengthy, isBetween1and100, isNumber } = require("./util/validation");
+import { blue, error } from "./util/chalkColors.js";
+import { logIdWithTitle } from "./util/helpers.js";
+import { isBetween1and100, isNumber } from "./util/validation.js";
 
 /** Main application function */
 
@@ -15,16 +16,14 @@ const main = async () => {
   });
 
   try {
-    const answer = await rl.question("Which picture album do you want to view? ");
+    const answer = await rl.question(blue("Which picture album do you want to view? "));
 
-    if (!isNumber(answer)) {
-      throw new Error('Invalid input. Expected a valid number input');
-    }
-
-    // The API returns an empty array with a 200 status so I'm using this validation check as an extra line of precaution
-    if (!isBetween1and100(answer)) {
-      throw new Error('The album you are looking for is not available');
-    }
+    // If answer is empty throw error
+    if (!answer.length) throw new Error('Invalid input. Expected a non null input')
+    // If answer isNaN throw error
+    if (!isNumber(answer)) throw new Error('Invalid input. Expected a valid number input');
+    // When querying for an album out of range the api returns an empty array with a 200 status, so I'm using this validation check as an extra line of precaution
+    if (!isBetween1and100(answer)) throw new Error('The album you are looking for is not available');
 
     // attempt to fetch for albums with album id
     const response = await fetchAlbumWithId(answer);
@@ -37,13 +36,13 @@ const main = async () => {
     // check if array of albums has records
     // if it does not have records, log it doesnt have records and log the empty array
     // if it does have records, log the expected `[id] title` output for each record
-    if (!isArrayLengthy(albums)) {
+    if (!albums.length) {
       console.log('The album you chose has no records!');
     } else albums.forEach(record => logIdWithTitle(record.id, record.title));
 
     process.exit(0);
-  } catch (error) {
-    console.log(`${error} ... Please try again!`);
+  } catch (e) {
+    console.log(error(`${e} ... Please try again!`));
     rl.close();
     main();
   }
