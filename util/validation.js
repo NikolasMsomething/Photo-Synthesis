@@ -1,5 +1,5 @@
-const isStringNum = (input) => {
-  if (Number.isNaN(Number(input))) return false;
+const isNumber = (input) => {
+  if (isNaN(input)) return false;
   return true;
 }
 
@@ -9,13 +9,13 @@ const isBetween1and100 = (input) => {
   return false
 }
 
-const doesArrayHaveItems = (arr) => {
+const isArrayLengthy = (arr) => {
   if (arr.length) return true;
   return false;
 }
 
 module.exports = {
   isBetween1and100,
-  doesArrayHaveItems,
-  isStringNum,
+  isArrayLengthy,
+  isNumber,
 }

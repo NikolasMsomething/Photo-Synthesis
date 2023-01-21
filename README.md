@@ -27,7 +27,7 @@ $ `npm run execute`
 
 You will be prompted with a question.
 
-Enter a valid stringnumber input within the available album range (1-100).
+Enter a valid input within the available album range (1-100).
 
 Example:
 
