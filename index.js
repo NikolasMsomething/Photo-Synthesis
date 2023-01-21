@@ -15,15 +15,27 @@ const main = async () => {
     output: process.stdout
   });
 
+  const restart = () => {
+    rl.close();
+    main();
+  }
+
+  const shouldContinue = async () => {
+    const answer = await rl.question(blue("Do you want to still keep searching albums? (y/n) "));
+    if (answer.match(/^y(es)?$/i)) return restart();
+    else if (answer.match(/^n(o)?$/i)) return process.exit(0);
+    else return shouldContinue();
+  }
+
   try {
     const answer = await rl.question(blue("Which picture album do you want to view? "));
 
     // If answer is empty throw error
-    if (!answer.length) throw new Error('Invalid input. Expected a non null input')
+    if (!answer.length) throw new Error('Invalid input. Expected a non null input');
     // If answer is not a number throw error
     if (!isNumber(answer)) throw new Error('Invalid input. Expected a valid number input');
     // When querying for an album out of range the api returns an empty array with a 200 status, so I'm using this validation check as an extra line of precaution
-    if (!isBetween1and100(answer)) throw new Error('The album you are looking for is not available');
+    if (!isBetween1and100(answer)) throw new Error('Enter an album in the available albums range (1 - 100)');
 
     // attempt to fetch for albums with album id
     const response = await fetchAlbumWithId(answer);
@@ -36,15 +48,17 @@ const main = async () => {
     // check if array of albums has records
     // If it does not have records, log it doesnt have records and log the empty array
     // If it does have records, log the expected `[id] title` output for each record
-    if (!albums.length) {
+    if (!albums.length) { 
       console.log('The album you chose has no records!');
+      console.log(albums);
     } else albums.forEach(record => logIdWithTitle(record.id, record.title));
 
-    process.exit(0);
+    // Prompt for continuing to search albums
+    shouldContinue();
+
   } catch (e) {
     console.log(error(`${e} ... Please try again!`));
-    rl.close();
-    main();
+    restart();
   }
 }
 

@@ -22,9 +22,16 @@ This is the tech that Photo-Sythesis relies on
 From
 \$ `npm install`
 
-## How to run
+## Node version
 
-Photo-Syntesis requires [Node.js](https://nodejs.org/) v19+ to run.
+Photo-Syntesis requires [Node.js](https://nodejs.org/) v18+ to run.
+This project has an `.nvmrc` file, so if you have [nvm](https://github.com/nvm-sh/nvm) please follow to use the project's node version.
+
+\$ `nvm install` to install the this project's version of node (if you do not have the version already installed)
+
+\$ `nvm use` to swap to this project's version of node
+
+## How to run
 
 From 
 \$ `npm run execute`
